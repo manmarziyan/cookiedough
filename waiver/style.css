@@ -156,6 +156,10 @@ form small {
   margin-top: 50px;
 }
 
+.center-align{
+  text-align: center;
+}
+
 
 /* =================================
   Media Queries
