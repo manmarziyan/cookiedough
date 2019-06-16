@@ -24,14 +24,19 @@ ul.main-nav {
  overflow: hidden;
 }
 
-/* specificity 021 */
-.nav-item a:not(.active){
+/* specificity 011 */
+.nav-item a{
 	padding: 10px 15px;
 	text-align: center;
 	display: block;
-  color: #fff;
   text-decoration: none;
 }
+
+/* specificity 021 */
+.nav-item a:not(.active){
+	color: #fff;
+}
+
 
 /* specificity 031 */
 .nav-item a:hover:not(.logo){
