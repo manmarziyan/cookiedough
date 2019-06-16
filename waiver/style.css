@@ -56,7 +56,6 @@ ul.main-nav {
 .container{
    display: grid;
    grid-template-columns: repeat(1, 1fr);
-   //grid-template-columns: repeat(auto-fit, minmax(510px, 1fr));
    grid-auto-rows: minmax(500px, auto);
 }
 
