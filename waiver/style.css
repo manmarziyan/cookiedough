@@ -30,12 +30,9 @@ ul.main-nav {
 	text-align: center;
 	display: block;
   text-decoration: none;
-}
-
-/* specificity 021 */
-.nav-item a:not(.active){
 	color: #fff;
 }
+
 
 
 /* specificity 031 */
@@ -44,8 +41,8 @@ ul.main-nav {
 	color: #28282A;
 }
 
-/* specificity 020 */
-.nav-item.active {
+/* specificity 021 */
+.nav-item a.active {
 	background: #F299BF;
 	color: #28282A;
 }
