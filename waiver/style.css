@@ -149,11 +149,13 @@ form small {
   height: 400px;
   background-color: grey;
 }
-/* .sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
+
+.footer{
+  text-align: center;
+  font-size: 0.5rem;
+  margin-top: 50px;
+}
+
 
 /* =================================
   Media Queries
