@@ -33,9 +33,13 @@
       <h2 class="main-header center-align">Contact Us</h2>
       <div>
         <form action="submission.html">
+          <label class="visuallyhidden">Name</label>
           <input type="text" id="name" name="name" placeholder="Name">
+          <label class="visuallyhidden" >Email</label>
           <input type="email" id="email" pattern="*.com" placeholder="Email">
+          <label class="visuallyhidden" >Phone</label>
           <input type="tel"  id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone">
+          <label class="visuallyhidden" >Your Message</label>
           <textarea id="subject" name="subject" placeholder="Your Message" style="height:200px"></textarea>
 
           <input class="button" type="submit" value="Submit">
