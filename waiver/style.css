@@ -7,6 +7,7 @@ body {
 	min-height: 100vh;
 }
 
+/* specificity 011 */
 ul.main-nav {
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ ul.main-nav {
  overflow: hidden;
 }
 
+/* specificity 011 */
 .nav-item a {
 	padding: 10px 15px;
 	text-align: center;
@@ -31,10 +33,12 @@ ul.main-nav {
   text-decoration: none;
 }
 
+/* specificity 031 */
 .nav-item a:hover:not(.logo){
 	background: #F299BF;
 }
 
+/* specificity 020 */
 .nav-item.active {
 	background: #F299BF;
 }
@@ -56,22 +60,27 @@ ul.main-nav {
 .container{
    display: grid;
    grid-template-columns: repeat(1, 1fr);
+   //grid-template-columns: repeat(auto-fit, minmax(510px, 1fr));
    grid-auto-rows: minmax(500px, auto);
 }
 
+/* specificity 111 */
 .container > div#red{
   background-image: url("assets/bruna-branco-1284094-unsplash.jpg");
 }
 
+/* specificity 111 */
 .container > div#green{
   background-image: url("assets/claudio-schwarz-purzlbaum-1226025-unsplash.jpg");
 }
 
+/* specificity 121 */
 .container > div.image-container{
   background-position: center center;
   background-size: cover;
 }
 
+/* specificity 121 */
 .container > div.text-container{
   padding: 15%;
 }
@@ -106,6 +115,8 @@ ul.main-nav {
 
   margin-top:50px;
 }
+
+/* specificity 020 */
 
 .button:hover {
   color: #fff;
@@ -144,20 +155,16 @@ form small {
   height: auto;
 }
 
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
-}
-
 .footer{
   text-align: center;
   font-size: 0.5rem;
   margin-top: 50px;
 }
 
-.center-align{
-  text-align: center;
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
 }
 
 .resp-container {
@@ -175,6 +182,11 @@ form small {
     border: 0;
 }
 
+/* .sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
 
 /* =================================
   Media Queries
@@ -197,13 +209,19 @@ form small {
      grid-template-columns: repeat(2, 1fr);
   }
 
+/* specificity 021 */
   .container div:nth-of-type(3) {
     order: 4;
   }
 
+/* specificity 021 */
   .container div:nth-of-type(4) {
     order: 3;
   }
+}
+
+.center-align{
+  text-align: center;
 }
 
 @media (min-width: 1025px) {
