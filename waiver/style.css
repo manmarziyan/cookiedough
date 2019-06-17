@@ -219,8 +219,7 @@ form small {
 }
 
 .item-details{
-  background-color: rgba(39,39,41,70);
-  opacity:0.9;
+  background-color: rgba(39,39,41,100);
   color: #fff;
   text-align: center;
 }
